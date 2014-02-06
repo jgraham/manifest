@@ -1,0 +1,16 @@
+default_property: Some value
+
+[First Test]
+  expected: OK
+
+  [subtest 1]
+    expected:
+      if os == "win": FAIL
+      PASS
+
+  [subtest 2]
+    disabled:
+      if os == "osx": http://some/bug
+
+[Second test]
+  expected: ERROR

@@ -1,0 +1,4 @@
+manifest
+========
+
+Manifest format/parser
